@@ -17,7 +17,8 @@
     },
     "autoload": {
         "psr-4": {
-            "CountryFlagGenerator\\": ""            
+            "CountryFlagGenerator\\": "",
+            "CountryFlagGenerator\\src\\Services\\": "src/Services/"
         }
     }
 }
