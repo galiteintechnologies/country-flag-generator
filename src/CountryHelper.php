@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Assets Finder Package
+ * This file is part of the Country Flag Generator
  *
  * (c) Nexuslink Services
  *
@@ -18,12 +18,12 @@ class CountryHelper {
     /**
      * @param string $countryCode
      * 
-     * @return string
+     * @return array
      */
     public function getFlag($countryCode) {
         
         if(empty($countryCode)) {
-            return "Please provide country code";
+            return ["name" => "Please provide country code"];
         }
         
         return CountryInfoProvider::findFlag($countryCode);
