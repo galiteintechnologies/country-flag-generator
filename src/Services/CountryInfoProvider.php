@@ -14,7 +14,7 @@ class CountryInfoProvider {
         $countryList = array();
         include(__DIR__ . '/../../Resources/countryList.php');
         
-        if(key_exists($countryCode, $cityList))
+        if(key_exists($countryCode, $countryList))
         {
             return [
                 'name' => $countryList[$countryCode],
